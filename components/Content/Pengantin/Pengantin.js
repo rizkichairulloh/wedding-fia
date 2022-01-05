@@ -18,8 +18,13 @@ export default function Pengantin() {
                         <br/>
                         <p className={"text-white"}>
                             Putri Keempat <br/><span className={"font-bold"}>{userData.nameOrangTuaWanita}
-
-                    </span>
+                        </span>
+                        </p>
+                        <p className={"text-white"}>
+                            {userData.alamatOrangTuaWanita}
+                        </p>
+                        <p className={"text-white"}>
+                            Jawa Tengah
                         </p>
                     </div>
                     <div className={'md:w-6/12 w-full '}>
@@ -36,7 +41,13 @@ export default function Pengantin() {
                             {userData.fullNamePengantinPria}</h1>
                         <br/>
                         <p className={"text-white mb-5 md:mb-0"}>
-                            Putra Pertama <br/> <span className={"font-bold"}>{userData.nameOrangTuaPria}</span>
+                            Putra Ketiga <br/> <span className={"font-bold"}>{userData.nameOrangTuaPria}</span>
+                        </p>
+                        <p className={"text-white"}>
+                            {userData.alamatOrangTuaPria}
+                        </p>
+                        <p className={"text-white"}>
+                            Jawa Timur
                         </p>
                     </div>
 
@@ -80,7 +91,7 @@ export default function Pengantin() {
                         </h1>
                         <br/>
                         <p className={"text-white mb-5 md:mb-0"}>
-                            Putra Pertama <br/> <span className={"font-bold"}>
+                            Putra Ketiga <br/> <span className={"font-bold"}>
                         {userData.nameOrangTuaPria}</span>
                         </p>
                     </div>

@@ -11,7 +11,7 @@ export default function Mempelai() {
     return (
         <>
             <div className={"bg-color-pallete-200 bg-cover bg-bottom"}>
-                <Image src={MaskBottom}/>
+                <Image src={MaskBottom} alt="image"/>
                 <div className={"container mx-auto pt-5"}>
                     <div className={"flex justify-center items-center text-center "}>
                         <p className={"text-white md:w-6/12 mb-8 md:text-4xl text-2xl mx-10"}>وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم
@@ -29,10 +29,10 @@ export default function Mempelai() {
                         (QS Ar-Rum : 21)
                     </p>
                     <div className={"flex justify-center items-center content-center"}>
-                        <Image src={BungaKiri} width={150} height={150}/>
+                        <Image src={BungaKiri} width={150} height={150} alt="image"/>
                         <h1 className={"md:text-6xl text-center  text-5xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>&nbsp;Groom
                             & Bride&nbsp;</h1>
-                        <Image src={BungaKanan} width={150} height={150}/>
+                        <Image src={BungaKanan} width={150} height={150} alt="image"/>
                     </div>
                     <br/>
                     <div className={"text-center px-10"}>
@@ -45,7 +45,7 @@ export default function Mempelai() {
                     <Pengantin/>
                 </div>
                 <div className={"flex md:-mb-2"}>
-                    <Image src={MaskTop}/>
+                    <Image src={MaskTop} alt="image"/>
                 </div>
             </div>
         </>

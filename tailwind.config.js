@@ -2,8 +2,8 @@ const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  //darkMode: false, // or 'media' or 'class',
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  media: false, // or 'media' or 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -63,11 +63,15 @@ module.exports = {
         },
         "blackContent": "#222222"
       },
-      backgroundImage: {
-        "invited": `url(/heronew.webp)`,
-        // "best-resolution": `url(/best_resolution1.png)`,
-        "footer": `url(/footer1.webp)`
-      },
+      // backgroundImage: {
+      //   'invite': "url('/assets/bg_invite.jpg')",
+      //   "footer": `url(/footer1.webp)`
+      // },
+      backgroundImage: theme => ({
+        "invite": "url('/bg_invite.jpg')",
+        "hero-banner": "url('/bg_hero.jpg')",
+        "footer": "url('/bg_footer.jpg')"
+      }),
       boxShadow: {
         'theme-1': '0 0 60px -15px rgba(0, 0, 0, 0.7)',
         'theme-2': '15px 0 35px -5px rgba(0, 0, 0, 0.5)',
@@ -95,15 +99,15 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({
-      addUtilities
-    }) {
-      const utilities = {
-        ".bg-hero": {
-          "background-image": "url(/hero5.webp)",
-        }
-      }
-      addUtilities(utilities);
-    }),
+    // plugin(function ({
+    //   addUtilities
+    // }) {
+    //   const utilities = {
+    //     ".bg-hero": {
+    //       "background-image": "url(/hero5.webp)",
+    //     }
+    //   }
+    //   addUtilities(utilities);
+    // }),
   ],
 }

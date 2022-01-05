@@ -16,26 +16,26 @@ export default function Hero({
     })
     return (
         <>
-            <div className={"bg-slate-600 bg-cover bg-top"}>
+            <div className={"bg-hero-banner min-h-screen bg-cover bg-top"}>
                 <div className={"text-center opacity-100"}>
-                    <div className={"md:py-10 object-left-top"}>
-                        <Image src={Bunga} width={512} height={282} alt="My image"/>
+                    <div className={"md:py-10 py-10 object-left-top"}>
+                        {/* <Image src={Bunga} width={512} height={282} alt="My image"/> */}
                     </div>
                     <animated.div style={fade}>
-                        <h1 className={"md:text-4xl text-3xl md:mb-0 font-medium text-white leading-relaxed font-curs"}>
+                        <h1 className={"md:text-4xl text-2xl md:mb-0 font-medium text-white leading-relaxed font-sans"}>
                             WE ARE GETTING MARRIED</h1>
-                        <h1 className={"md:text-3xl text-2xl font-medium text-white leading-relaxed md:my-6 font-curs"}>
+                        <h1 className={"md:text-3xl text-2xl font-medium text-white leading-relaxed md:my-6 font-sans"}>
                         {userData.namePengantin}
                         </h1>
                     </animated.div>
-                    <p className={"text-white"}>{userData.date}</p>
+                    <p className={"text-white text-sm font-sans"}>February 12, 2022</p>
                     {/*<Timer/>*/}
                    
                 </div>
                 {/*</motion.div>*/}
-                <div className={"-mb-2"}>
-                    <Image src={MaskTop} alt="My image"/>
-                </div>
+            </div>
+            <div className={"-mb-2"}>
+                <Image src={MaskTop} alt="My image" />
             </div>
             <audio src={"../../assets/pernikahanImpian.mp3"}/>
         </>
