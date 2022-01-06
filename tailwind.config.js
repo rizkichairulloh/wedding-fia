@@ -63,13 +63,9 @@ module.exports = {
         },
         "blackContent": "#222222"
       },
-      // backgroundImage: {
-      //   'invite': "url('/assets/bg_invite.jpg')",
-      //   "footer": `url(/footer1.webp)`
-      // },
       backgroundImage: theme => ({
-        "invite": "url('/bg_invite.jpg')",
-        "hero-banner": "url('/bg_hero.jpg')",
+        "invite": "url('/sky.jpg')",
+        "hero-banner": "url('/bg_hero_1.jpg')",
         "footer": "url('/bg_footer.jpg')"
       }),
       boxShadow: {
@@ -98,16 +94,5 @@ module.exports = {
       inset: ['hover', 'group-hover'],
     },
   },
-  plugins: [
-    // plugin(function ({
-    //   addUtilities
-    // }) {
-    //   const utilities = {
-    //     ".bg-hero": {
-    //       "background-image": "url(/hero5.webp)",
-    //     }
-    //   }
-    //   addUtilities(utilities);
-    // }),
-  ],
+  plugins: [],
 }

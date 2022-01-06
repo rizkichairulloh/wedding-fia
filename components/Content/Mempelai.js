@@ -3,11 +3,9 @@ import BungaKiri from '../../assets/leaves-left.png'
 import BungaKanan from '../../assets/leaves-right.png'
 import MaskTop from '../../assets/mask.png'
 import MaskBottom from '../../assets/mask_bottom.png'
-import Pengantin from "./Pengantin/Pengantin";
-import Waktu from "./Waktu";
+import Pengantin from "./Pengantin";
 
 export default function Mempelai() {
-
     return (
         <>
             <div className={"bg-color-pallete-200 bg-cover bg-bottom"}>

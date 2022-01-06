@@ -7,7 +7,6 @@ import Timer from "../Timer";
 import MaskTop from "../../assets/mask.png";
 import {useState} from "react";
 import {useSpring, animated} from "react-spring";
-import Instagram from "../../assets/instagram.png";
 import userData from "../../constants/data";
 
 export default function Waktu() {
@@ -22,33 +21,9 @@ export default function Waktu() {
 
     })
     const showInMapClicked = () => {
-        window.open("https://www.google.com/maps/place/Gedung+Serbaguna+Graha+Cibening,+Jalan+Caman+Raya+No.+89,+Jatibening+II,+Pondok+Gede,+RT.006%2FRW.003,+Jatibening,+Kec.+Pondokgede,+Kota+Bks,+Jawa+Barat+17412/@-6.264685,106.94529,16z/data=!4m2!3m1!1s0x2e698d107ea38e83:0xb701d016f793eb9b?hl=id&gl=ID");
+        window.open(userData.mapsToApps);
     };
-
-    const copyText = (e) => {
-        const rekeningRifki = 1242725876
-        const rekeningNovia = 7510870438
-        const alamatRumah = "Jl. Caman Raya Gg. H. Moh. Ali (Belakang Kopi bob) No.1 RT 07/03, Jatibening."
-        if (e === 'rifki') {
-            navigator.clipboard.writeText(rekeningRifki)
-            setCopied({
-                ...copied,
-                rifki: true
-            })
-        } else if (e === "novia") {
-            navigator.clipboard.writeText(rekeningNovia)
-            setCopied({
-                ...copied,
-                novia: true
-            })
-        } else {
-            navigator.clipboard.writeText(alamatRumah)
-            setCopied({
-                ...copied,
-                alamat: true
-            })
-        }
-    }
+    
     return (
         <>
             <div className={"bg-color-white bg-cover bg-bottom"}>

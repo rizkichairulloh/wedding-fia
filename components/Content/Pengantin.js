@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import userData from "../../../constants/data";
+import userData from "../../constants/data";
 
 export default function Pengantin() {
     return (

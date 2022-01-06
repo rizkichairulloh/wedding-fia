@@ -6,23 +6,20 @@ import Waktu from "../components/Content/Waktu";
 import ProtokolKesehatan from "../components/Content/ProtokolKesehatan";
 import Music from "../components/Content/Music";
 import { useSpring, animated } from "react-spring";
-import Wish from "../components/Content/Wish";
 import Footer from "../components/Content/Footer";
 import Head from "next/head";
 
 export default function Home() {
   const [invited, setInvited] = useState(true)
-  const [tamu, setTamu] = useState("")
   const changeInvited = (e) => {
     setInvited(e)
   }
-  const nameGuest = (e) => {
-    setTamu(e)
-  }
+
   const fade = useSpring({
     opacity: invited ? 0 : 1,
     delay: 50
   })
+
   return (
     <>
       <Head>
@@ -51,14 +48,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {invited ?
-        <Invited changeInvited={changeInvited} nameGuest={nameGuest} /> :
+        <Invited changeInvited={changeInvited} /> :
         <animated.div style={fade}>
           <Music />
-          <Hero guest={tamu} />
+          <Hero />
           <Mempelai />
           <Waktu />
           <ProtokolKesehatan />
-          {/* <Wish guest={tamu} /> */}
           <Footer />
         </animated.div>
       }
