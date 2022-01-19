@@ -8,7 +8,7 @@ export default function Pengantin() {
                 <div className={"flex flex-wrap text-center mt-10 pb-10"}>
                     <div className={'md:w-6/12 w-full'}>
                         <div className={"flex items-center justify-center"}>
-                            <img className={"rounded-full  w-52 h-52"} src={userData.avatarPria} alt="avatar" />
+                            <img className={"rounded-full  w-52 h-52"} src={userData.avatarWanita} alt="avatar" />
                         </div>
                         <h1 className={"md:text-5xl text-4xl font-medium text-white leading-relaxed mt-5 "}>
                             {userData.shortNamePengantinWanita}
